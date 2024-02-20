@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     }
     
     /*Print the result*/
-    printf("The factorial of %lld is: %lld",number, factorial);
+    printf("The factorial of %lld is: %lld", number, factorial);
     
     
    /*Implement the function that calculates if the argument is a prime number*/
@@ -43,11 +43,11 @@ int main(int argc, char *argv[])
     /*Print the result*/
     if(count == 1)
     {
-        printf("%lld is a prime number\n",number);
+        printf("%d is a prime number\n", number);
     }
     else
     {
-        printf("%lld is not a prime number\n",number);
+        printf("%d is not a prime number\n", number);
     }
     return 0;
 }
