@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    if (argc < 2) {
+    if (argc != 2) {
         fprintf(stderr,"Usage: program <number>\n");
         return 1;
     }
@@ -12,25 +12,25 @@ int main(int argc, char *argv[]) {
     /*It must be verified that the entered number is greater than or equal to zero*/
      if(number < 0)
     {
-        perror("El núnmero debe ser mayor a cero");
-        exit(1);
+        fprintf(stderr,"El núnmero debe ser mayor a cero");
+        return|(1);
     }
     /*Implement the function that calculates the factorial of the input argument*/
-    int factorial = 1;
-    int b;
+    long long int factorial = 1;
+    long long int b;
     for (b = number; b > 1; b--)
     {
         factorial *= b;
     }
     
     /*Print the result*/
-    printf("El factorial de %d es %d",number,factorial);
+    printf("El factorial de %lld es %lld",number,factorial);
     
    /*Implement the function that calculates if the argument is a prime number*/
     int count = 0,index = 1;
     while (index < number)
     {
-        if(number%index == 0)
+        if(number % index == 0)
             {
             count++;
             }
