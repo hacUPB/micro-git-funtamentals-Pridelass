@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
-    if (argc != 2) {
+int main(int argc, char *argv[]) 
+{
+    if (argc != 2)
+     {
         fprintf(stderr,"Usage: program <number>\n");
-        return 1;
+        return (1);
     }
     
     int number = atoi(argv[1]); //Convert the console input argument to an integer
@@ -24,10 +26,11 @@ int main(int argc, char *argv[]) {
     }
     
     /*Print the result*/
-    printf("The factorial of %lld is: %lld",number,factorial);
+    printf("The factorial of %lld is: %lld",number, factorial);
+    
     
    /*Implement the function that calculates if the argument is a prime number*/
-    int count = 0,index = 1;
+    int count = 0, index = 1;
     while (index < number)
     {
         if(number % index == 0)
